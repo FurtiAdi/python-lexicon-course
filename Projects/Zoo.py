@@ -6,6 +6,7 @@ class Animal:
         self.name = name
         self.age = age
         self.energy_level = energy_level
+        self.sleep_state = False
 
     @property
     def name_value(self):
@@ -93,7 +94,6 @@ class Animal:
 class Herbivore(Animal):
     def __init__(self, name, age, energy_level):
         super().__init__(name, age, energy_level)
-        self.sleep_state = False
 
     def eats(self, food_type):
         self.eat(
@@ -124,7 +124,6 @@ class Herbivore(Animal):
 class Carnivore(Animal):
     def __init__(self, name, age, energy_level):
         super().__init__(name, age, energy_level)
-        self.sleep_state = False
 
     def eats(self, food_type):
         self.eat(
@@ -173,7 +172,6 @@ class Carnivore(Animal):
 class Omnivore(Animal):
     def __init__(self, name, age, energy_level):
         super().__init__(name, age, energy_level)
-        self.sleep_state = False
 
     def eats(self, food_type):
         self.eat(
