@@ -44,7 +44,6 @@ class Animal:
         print(f"{self.name} is eating {food_type}!")
         self.energy_level_value = self.energy_level_value * increase_factor
 
-        self.control_energy()
 # -----------------------------------------------------------------
 
     def sleep(self, tired_limit, wake_limit, increase_factor):
@@ -59,7 +58,6 @@ class Animal:
         if self.energy_level >= wake_limit:
             print(f"{self.name} is awake now!")
             self.sleep_state = False
-        self.control_energy()
 # -----------------------------------------------------------------
 
     def interact_base(self, min_energy, energy_loss_factor):
@@ -68,7 +66,6 @@ class Animal:
             self.energy_level_value = self.energy_level_value * energy_loss_factor
         else:
             print(f"{self.name} cannot interact right now!")
-        self.control_energy()
 
 # ----------------------------------------------------------------------
 # Subclasses
