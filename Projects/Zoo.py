@@ -14,11 +14,13 @@ class Animal:
 
     @energy_level_value.setter
     def energy_level_value(self, new_energy_level):
-        self.energy_level = new_energy_level
+        if new_energy_level < 0:
+            self.energy_level = 0
+        elif new_energy_level > 100:
+            self.energy_level = 100
+        else:
+            self.energy_level = new_energy_level
 
-    def control_energy(self):
-        if self.energy_level > 100:
-            self.energy_level_value = 100
 # -----------------------------------------------------------------
 
     def eat(self, food_type, allowed_food, tired_limit, full_limit, increase_factor):
