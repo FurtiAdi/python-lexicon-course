@@ -133,7 +133,7 @@ class Carnivore(Animal):
     def hunt(self, animal: Animal):
         if isinstance(animal, Herbivore):
             if self.energy_level >= 50 and not self.sleep_state:
-                print(f"{self.name} tries to hunt {animal.name_value}.")
+                print(f"{self.name} tries to hunt {animal.name}.")
                 self.energy_level *= 0.85  # loses 15% during hunting
                 animal.energy_level_value = animal.energy_level_value * 0.90  # lose 10%
                 if (self.energy_level > animal.energy_level_value):
@@ -142,11 +142,11 @@ class Carnivore(Animal):
                     self.eats('meat')
                 else:
                     print(
-                        f"Hunting was not succesfull! {animal.name_value} escaped.")
+                        f"Hunting was not succesfull! {animal.name} escaped.")
             else:
                 print(f"{self.name} is too tired to hunt.")
         else:
-            print(f"{self.name} can not hunt {animal.name_value}")
+            print(f"{self.name} can not hunt {animal.name}")
 # ---------------------------------------------------------------------
 # Omnivore class
 # ---------------------------------------------------------------------
@@ -187,7 +187,7 @@ class Visitor:
         self.name = name
 
     def feed(self, animal: Animal, food_type):
-        print(f"{self.name} is trying to feed {animal.name_value} {food_type}")
+        print(f"{self.name} is trying to feed {animal.name} {food_type}")
         animal.eats(food_type)
 
     def interact(self, animal: Animal):
@@ -277,14 +277,14 @@ simulate(1, bear, visitor, 'plant')
 
 lion = Carnivore('Simba', 5, 55)
 sheep = Herbivore('Begiey', 3, 50)
-print(f'{lion.name_value} energy level before hunting is: ',
+print(f'{lion.name} energy level before hunting is: ',
       lion.energy_level_value)
-print(f'{sheep.name_value} energy level before hunting is: ',
+print(f'{sheep.name} energy level before hunting is: ',
       sheep.energy_level_value)
 lion.hunt(sheep)
-print(f'{lion.name_value} energy level after hunting is: ',
+print(f'{lion.name} energy level after hunting is: ',
       lion.energy_level_value)
-print(f'{sheep.name_value} energy level after hunting is: ',
+print(f'{sheep.name} energy level after hunting is: ',
       sheep.energy_level_value)
 
 # ---------------------------------------------------------------------
