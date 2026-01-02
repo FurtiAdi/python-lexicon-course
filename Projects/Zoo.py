@@ -214,16 +214,13 @@ def simulate(days, animal: Animal, visitor: Visitor, food_type):
         visitor.feed(animal, food_type)
         print(f'Energy after eating {food_type}: {animal.energy_level_value}')
 
-        visitor.interact(animal)
-        visitor.interact(animal)
-        visitor.interact(animal)
-        visitor.interact(animal)
-        visitor.interact(animal)
+        for i in range(5):
+            visitor.interact(animal)
         print('Energy after interacting:', animal.energy_level_value)
 
         print(f'\n......Night Time.....')
-        animal.sleeps()
-        animal.sleeps()
+        for i in range(3):
+            animal.sleeps()
         print(f'Energy after sleeping: {animal.energy_level_value} \n')
 
 
