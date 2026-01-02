@@ -261,8 +261,8 @@ interacts when > 45%
 sleeps when ≤ 45%
 wakes up at ≥ 65%
 # """
-# lion = Carnivore('Simba', 5, 49)
-# simulate(1, lion, visitor, 'meat')
+lion = Carnivore('Simba', 5, 49)
+simulate(1, lion, visitor, 'meat')
 
 # ---------------------------------------------------------------------
 # Test2 – Herbivore
@@ -274,8 +274,8 @@ interacts when > 40%
 sleeps when ≤ 40%
 wakes up at ≥ 50%
 """
-# sheep = Herbivore('Begiey', 3, 41)
-# simulate(1, sheep, visitor, 'plant')
+sheep = Herbivore('Begiey', 3, 41)
+simulate(1, sheep, visitor, 'plant')
 
 # ---------------------------------------------------------------------
 # Test3 – Omnivore
@@ -287,8 +287,8 @@ interacts when > 35%
 sleeps when ≤ 35%
 wakes up at ≥ 55%
 """
-# bear = Omnivore('TeddyBear', 7, 60)
-# simulate(1, bear, visitor, 'plant')
+bear = Omnivore('TeddyBear', 7, 60)
+simulate(1, bear, visitor, 'plant')
 
 # ---------------------------------------------------------------------
 # Test4 – Carnivore hunts Hernivore
@@ -307,3 +307,4 @@ print(f'{sheep.name_value} energy level after hunting is: ',
       sheep.energy_level_value)
 
 # ---------------------------------------------------------------------
+
