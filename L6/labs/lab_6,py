@@ -1,0 +1,25 @@
+# 6
+class Shapes:
+    ratio = 3
+
+    def __init__(self):
+        pass
+
+class Triangle(Shapes):
+    def __init__(self):
+        pass
+    
+class Rectangle(Shapes):
+    ratio = 4
+    def __init__(self):
+        pass
+
+
+s = Shapes()
+print("Shapes ratio value: ", s.ratio)
+
+t = Triangle()
+print("Triangel ratio value: ", t.ratio)
+
+r = Rectangle()
+print("Rectangle ratio value: ", r.ratio)
