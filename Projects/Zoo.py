@@ -9,14 +9,6 @@ class Animal:
         self.sleep_state = False
 
     @property
-    def name_value(self):
-        return self.name
-
-    @name_value.setter
-    def name_value(self, new_name):
-        self.name = new_name
-
-    @property
     def age_value(self):
         return self.age
 
