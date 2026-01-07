@@ -219,7 +219,7 @@ def simulate(days, animal: Animal, visitor: Visitor, food_type):
         print('Energy after interacting:', animal.energy_level_value)
 
         print(f'\n......Night Time.....')
-        for i in range(3):
+        for i in range(2):
             animal.sleeps()
         print(f'Energy after sleeping: {animal.energy_level_value} \n')
 
