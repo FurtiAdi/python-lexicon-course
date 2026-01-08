@@ -10,17 +10,27 @@ The goal of this repository is to document my learning progress and
 showcase my understanding of Python fundamentals.
 
 ---
+## 📚 Topics Covered
 
-## Topics Covered
-- Python syntax and basic data types
-- Conditional statements and loops
-- Functions and modules
-- Object-Oriented Programming (OOP)
-  - Classes and inheritance
-  - Encapsulation and properties
-  - Base classes and subclasses
-- Error handling
-- Writing clean and readable code
+### Python Fundamentals
+- Python syntax and basic data types  
+- Conditional statements and loops  
+- Functions and modules  
+- Error handling  
+- Writing clean and readable code  
+
+### Object-Oriented Programming (OOP)
+- Classes and objects  
+- Encapsulation and properties  
+- Inheritance  
+- Base classes and subclasses  
+
+### Django
+- Django project structure  
+- Apps, views, and URLs  
+- Templates (HTML rendering)  
+- Static files  
+- SQLite database
 
 ---
 
@@ -34,7 +44,8 @@ Each folder contains a specific lecture and labs related to the course.
 ---
 
 ## Technologies
-- Python 3
+- Python 3.6
+- Django 1.11
 - Git & GitHub
 
 ---
