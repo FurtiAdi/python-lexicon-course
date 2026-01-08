@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My App</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+  <h1>{{insert_welcome_message}}</h1>
+  <img src="{% static 'images/python.jpg' %}" alt="Lexicon Logo">  
+  <p>{{insert_course_name}}</p>
+  <p>{{insert_student_today}}</p>
+  <p>{{insert_me}}</p>
+ 
+</body>
+</html>
