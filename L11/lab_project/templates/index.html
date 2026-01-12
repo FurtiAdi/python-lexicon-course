@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My App</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  </head>
+  <body>
+    <h1>{{insert_title}}</h1>
+    <table>
+      <tr>
+        <th>{{insert_column_1_title}}</th>
+        <th>{{insert_column_2_title}}</th>
+      </tr>
+      {% for record in records %}
+      <tr>
+        <td>{{ record.name }}</td>
+        <td>{{ record.date }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
