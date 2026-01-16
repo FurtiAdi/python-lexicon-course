@@ -1,0 +1,15 @@
+{% extends "employee_app/base.html" %}
+{% block body_block %}
+  <div class="jumbotron">
+    <h1>Employee Profile Preview</h1>
+    {% if registered %}
+    <p>Username: {{ employee_username }}</p>
+    <p>Email: {{ employee_email }}</p>
+    <p>LinkedIn link: {{ employee_linkedin_site }}</p>
+    <p>Profile Picture: {{ employee_profile_pic }}</p>
+    {% else %}
+    <p>Please register to see your profile preview.</p>
+    {% endif %}
+
+  </div>
+{% endblock %}
