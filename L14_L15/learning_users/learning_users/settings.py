@@ -84,9 +84,6 @@ DATABASES = {
 }
 
 PASSWORD_HASHERS = [
-    'django.contrib.auth.hashers.ARGON2PasswordHasher',
-    'django.contrib.auth.hashers.BcryptSHA256PasswordHasher'
-    'django.contrib.auth.hashers.BCryptPasswordHasher',
     'django.contrib.auth.hashers.PBKDF2PasswordHasher',
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 ]
@@ -133,3 +130,6 @@ STATICFILES_DIRS = [STATIC_DIR,]
 #MEDIA
 MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
+
+#LOGIN URL
+LOGIN_URL = '/user_app/user_login/'
