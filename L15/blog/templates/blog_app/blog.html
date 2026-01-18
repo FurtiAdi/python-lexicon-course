@@ -1,0 +1,119 @@
+{% extends 'blog_app/base.html' %} {% block body_block %} {% load static %}
+<div class="container">
+  <!-- SECTION 1 -->
+  <div class="row" style="margin-bottom: 40px">
+    <div class="col-md-4">
+      <img src={% static 'images/injera.png' %} class="img-responsive"
+      alt="Injera" />
+    </div>
+    <div class="col-md-8">
+      <h2>Traditional Injera and Its Cultural Meaning</h2>
+      <p>
+        Injera is far more than just a type of bread in Ethiopian and Eritrean
+        cuisine — it is the foundation of every shared meal. Made from teff
+        flour and naturally fermented over several days, injera has a
+        distinctive sour flavor and a soft, spongy texture that makes it perfect
+        for scooping up food. Rather than using plates and cutlery, meals are
+        served directly on top of injera, encouraging people to eat together
+        from one shared surface.
+      </p>
+      <p>
+        This tradition represents unity, respect, and hospitality. Sharing
+        injera symbolizes trust and connection, turning every meal into a social
+        experience rather than just an act of eating. Whether served during
+        everyday family dinners or special celebrations, injera carries deep
+        cultural meaning and remains a powerful symbol of togetherness.
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+
+  <div class="row" style="margin-bottom: 40px">
+    <div class="col-md-4">
+      <img src={% static 'images/spices.png' %} class="img-responsive"
+      alt="Spices" />
+    </div>
+    <div class="col-md-8">
+      <h2>Spices That Define Ethiopian & Eritrean Cooking</h2>
+      <p>
+        Spices are the soul of Ethiopian and Eritrean cooking, shaping the bold
+        and unforgettable flavors that define the cuisine. Spice blends such as
+        berbere and mitmita are carefully prepared using ingredients like chili
+        peppers, garlic, ginger, cloves, and other warm spices. Each family
+        often has its own variation, passed down through generations and
+        adjusted to personal taste.
+      </p>
+      <p>
+        These spice blends are not only about heat but also depth, aroma, and
+        balance. They transform simple ingredients into rich, flavorful dishes
+        that reflect regional history and cultural identity. The careful
+        preparation of spices is an art form, requiring patience and experience,
+        and it plays a central role in preserving traditional cooking methods.
+      </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row" style="margin-bottom: 40px">
+    <div class="col-md-4">
+      <img src={% static 'images/home_cooking.png' %} class="img-responsive"
+      alt="Home cooking" />
+    </div>
+    <div class="col-md-8">
+      <h2>Home-Style Dishes Passed Down Through Generations</h2>
+      <p>
+        Many Ethiopian and Eritrean dishes are rooted in family tradition and
+        home cooking, where recipes are learned through observation rather than
+        written instructions. Children grow up watching parents and grandparents
+        prepare meals, slowly absorbing techniques, flavors, and cultural values
+        along the way. Dishes like shiro, doro wat, and tsebhi are made with
+        care, patience, and attention to detail.
+      </p>
+      <p>
+        These home-style meals represent comfort, love, and cultural continuity.
+        Cooking is often a communal activity, bringing family members together
+        in the kitchen. Through these dishes, stories are shared, traditions are
+        preserved, and cultural identity is passed from one generation to the
+        next, keeping heritage alive through food.
+      </p>
+    </div>
+  </div>
+</div>
+{% if user.is_authenticated %}
+<hr />
+<h3>Comments</h3>
+
+<div class="media" style="margin-bottom: 20px">
+  <img class="media-object pull-left" src={% static 'images/person_icon.png' %}
+  width="50" height="40" alt="User avatar" />
+  <div class="media-body">
+    <h5 class="media-heading">Maria Andom</h5>
+    I love how this blog explains the cultural meaning behind injera. It reminds
+    me of family meals growing up.
+  </div>
+</div>
+<hr />
+<div class="media" style="margin-bottom: 20px">
+  <img class="media-object pull-left" src={% static 'images/person_icon.png' %}
+  width="50" height="40" alt="User avatar" />
+  <div class="media-body">
+    <h5 class="media-heading">Daniel Tekle</h5>
+    The spices section was very informative. Berbere really makes Ethiopian food
+    special.
+  </div>
+</div>
+<hr />
+
+<div class="media">
+  <img class="media-object pull-left" src={% static 'images/person_icon.png' %}
+  width="50" height="40" alt="User avatar" />
+  <div class="media-body">
+    <h5 class="media-heading">Sara Brhane</h5>
+    This blog feels warm and authentic. Thank you for sharing these traditions.
+  </div>
+</div>
+<hr />
+{% endif %} {% endblock %}

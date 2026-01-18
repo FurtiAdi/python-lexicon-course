@@ -1,0 +1,17 @@
+{% extends "blog_app/base.html" %} {% block body_block %}
+<div class="jumbotron text-center">
+  {% if profile_pic %}
+  <img
+    src="{{ profile_pic.url }}"
+    alt="Profile Picture"
+    class="img-circle"
+    width="150"
+  />
+  {% endif %}
+  <h3>{{ username }}</h3>
+  <p>{{ email }}</p>
+  {% if linkedin_site %}
+  <p>{{ linkedin_site }}</p>
+  {% endif %}
+</div>
+{% endblock %}
