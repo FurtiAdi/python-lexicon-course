@@ -1,0 +1,56 @@
+Part 1 – Answers
+
+    1. What does it mean to run an AI model locally?
+    
+        Running an AI model locally means that the model is executed directly on your own computer instead of sending requests to an external server or API. All the processing happens on your machine, so your data stays local.
+
+    2. What are the advantages of running models locally instead of using an API?
+    
+        One big advantage is privacy, since your data is not sent to external services. It also gives you full control over the model and how it is used. You don’t need API keys or worry about usage limits or costs. Another benefit is that it can work offline once everything is set up.
+
+    3. What are some limitations of running models locally?
+        
+        The biggest limitation is hardware. Large models require a lot of RAM and GPU power, which many computers don’t have. It can also be slower compared to cloud-based solutions, and setting everything up can be more complex.
+
+    4. What is Ollama (or similar tools) used for?
+        
+        Ollama is a tool that makes it easy to run large language models locally on your computer. It handles downloading, managing, and running models so developers can use them without needing deep knowledge of infrastructure.
+
+    5. How is this similar to what we did with Hugging Face?
+        
+        It is similar because both involve loading a model and using it to make predictions or generate text. The main difference is that with Hugging Face we often use hosted models or APIs, while here everything runs locally on our machine.
+
+    
+    Part 2 – Reflection
+
+        This approach is similar to CountVectorizer + ML model because both run locally and process data directly on your machine. In both cases, you have full control over the data and the model.
+
+        It is also similar to Hugging Face pipelines because we still use pre-trained models to perform tasks like text generation or classification. The workflow (input → model → output) is basically the same.
+
+        The main difference between classical ML models and modern AI models (LLMs) is their complexity and capability. Classical models are usually smaller, faster, and designed for specific tasks like classification. LLMs, on the other hand, are much larger and more flexible—they can understand context, generate text, and handle many different tasks with one model.
+
+
+Part 3 – Application Thinking
+
+    1. When would you choose each approach?
+
+        Simple ML model (like first lab):
+        I would use this when the task is simple, like spam detection or sentiment classification, and when performance and speed are important.
+        Hugging Face model:
+        I would use this when I need more advanced NLP features but still want something easy to use without worrying about infrastructure.
+        Local LLM (like in the video):
+        I would choose this when privacy is important, or when I want full control over the model and avoid API costs.
+
+    2. What could you build using a local AI model?
+
+        A personal AI assistant that runs offline and helps with writing, coding, or studying
+        A private chatbot for a company that handles sensitive customer data without sending it to external servers
+    
+
+    Part 4 – Short Reflection
+
+        From the video, I learned how modern AI models can actually run on your own computer, which makes AI more accessible and private. I didn’t expect that tools like Ollama could make the setup so simple, since I thought running large models would be very complicated. What surprised me most is that you can use powerful models without relying on cloud services. I think running AI locally is very useful, especially for privacy and learning purposes. It also gives developers more control and flexibility. However, it still depends a lot on hardware, which can be a limitation. Overall, it feels like an important step toward more independent and customizable AI systems.    
+    
+    Advanced (optional)
+
+        Smaller models require less power and are faster, which makes them better for local use. LLMs are more powerful but need more resources. The trade-off is between performance and efficiency.

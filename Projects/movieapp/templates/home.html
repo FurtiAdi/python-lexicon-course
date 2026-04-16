@@ -1,0 +1,23 @@
+<h2>Movies</h2>
+
+{% if error %}
+<p style="color:red;">{{ error }}</p>
+{% endif %}
+
+<a href="/add/">Add Movie</a>
+
+<br><br>
+
+<form method="GET">
+  <input name="q" placeholder="Search by name or genre">
+  <button type="submit">Search</button>
+</form>
+
+<ul>
+  {% for movie in movies %}
+    <li>
+      <strong>{{ movie.title }}</strong> ({{ movie.year }})
+      <br>Genres: {{ movie.genre }}
+    </li>
+  {% endfor %}
+</ul>

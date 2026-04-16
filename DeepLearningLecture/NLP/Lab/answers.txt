@@ -1,0 +1,108 @@
+Part 2 -  Investigate the Model
+
+1. What happens if you change ngram_range from (1,1) to (1,2)?
+
+    Changing ngram_range from (1,1) to (1,2) means the model will use 
+    both single words (unigrams) and two-word combinations (bigrams) as 
+    features. With (1,1) the model only learns from individual words, but 
+    with (1,2) it can also learn from short phrases such as "not worth" or 
+    "very disappointing". This can help the model better capture sentiment 
+    because some meanings are clearer when words appear together.
+
+2. Why might bigrams help in sentiment analysis? 
+
+    Bigrams help because they allow the model to learn from short phrases instead 
+    of only single words. Some sentiments are expressed through combinations of words, 
+    such as “not good” or “very bad”. Using bigrams helps the model capture these patterns 
+    and understand sentiment more accurately.
+
+3. Which of the test sentences were classified incorrectly? 
+
+    The sentences “i hated the film” and “a boring and bad story” were classified incorrectly.
+    Both sentences are negative, but the model predicted them as positive.
+
+4. Why might the sentence "the movie was not good" be difficult for a simple bag-of-words model? 
+
+    A bag-of-words model treats words independently and ignores their order and relationships. Because 
+    of this, the model may focus on the word “good”, which is usually positive, and ignore the effect of 
+    the word “not”. As a result, the sentence may be incorrectly classified as positive even though the 
+    meaning is negative.
+
+5. What would likely happen if you had 1000 reviews instead of 10?
+
+    If the dataset contained 1000 reviews instead of only 10, the model would have much more training data 
+    and could learn better patterns of positive and negative language. This would likely improve the accuracy 
+    and make the predictions more reliable.
+
+
+Part 3
+
+Explain whether the result improved or not
+
+    The result improved after applying the improvements. In the original model, all test sentences were 
+    classified as positive, which resulted in an accuracy of 0.5 because only two out of four predictions 
+    were correct. After improving the model by cleaning the text, using bigrams, and adding more training 
+    reviews, the classifier was able to better learn the sentiment patterns in the data. As a result, the model 
+    correctly classified all test sentences and the accuracy increased to 1.0. This shows that preprocessing the 
+    text and increasing the amount of training data can significantly improve the performance of a machine learning 
+    model.
+
+Part 4 - Understanding the Limitations
+1. Which of these sentences were classified incorrectly?
+
+    The sentence “the movie was not good” was classified incorrectly. The sentence has a negative meaning, 
+    but the model predicted it as positive. This happened because the model focused on the word “good”, which 
+    usually appears in positive reviews, and did not properly understand the negation created by the word “not”.
+
+2. Why might the model struggle with sentences that contain negations like "not good" or "not bad"?
+
+    The model struggles with negations because the bag-of-words approach treats words independently 
+    and ignores their relationships. It does not understand that the word “not” changes the meaning of 
+    words like “good” or “bad”. As a result, the model may classify “not good” as positive because it 
+    only recognizes the word “good”.
+
+3.  Why might sarcasm or mixed opinions be difficult for this type of model?
+
+    Sarcasm or mixed opinions contain both positive and negative words in the same sentence. 
+    Because the bag-of-words model only counts words and does not understand context or tone,
+    it cannot determine the real intention of the sentence. This can lead to incorrect predictions 
+    when the sentiment is subtle or contradictory.
+
+4️. What information about the sentence meaning is lost when we only count words?
+
+    When we only count words, important information such as word order, context, and relationships 
+    between words is lost. The model cannot understand how words interact within a sentence or capture 
+    the full meaning of the text. This makes it difficult for the model to correctly interpret negation, 
+    sarcasm, or complex expressions.
+
+Part 5 – From Bag-of-Words to Modern NLP
+1️.  What is the main limitation of representing text using only word counts?
+
+    The main limitation of representing text using only word counts is that the model does not understand 
+    the meaning or context of words. The bag-of-words approach only counts how often words appear in a sentence 
+    and ignores word order and relationships between words. Because of this, the model cannot fully understand 
+    the meaning of the text.
+
+2️.  Why might a model that understands word context perform better?
+
+    A model that understands word context can perform better because it considers how words relate to each other 
+    in a sentence. Modern NLP models such as word embeddings or transformer models can capture the meaning of words b
+    ased on their context. This allows the model to better understand phrases, negations, and the overall meaning of 
+    a sentence.
+
+3️. What kinds of problems in language might require more advanced NLP models?
+
+    More advanced NLP models are needed for language problems that require deeper understanding of meaning and 
+    context. Examples include sarcasm detection, understanding complex sentences, question answering, machine 
+    translation, and conversations in chatbots. These tasks require models that can understand relationships b
+    etween words and the overall structure of language.
+
+Final Reflection
+
+    This lab demonstrated how a machine learning model can be used to classify text sentiment. The improved model 
+    worked best because it included text cleaning, bigrams, and additional training reviews. These changes helped the 
+    model learn better patterns in the data and improved the accuracy from 0.5 to 1.0. However, the dataset used in this 
+    lab was very small, containing only a limited number of movie reviews. Because of this, the model may not perform well 
+    on more complex or unseen sentences. If I were building a real sentiment classifier, I would use a much larger dataset 
+    and more advanced NLP techniques such as word embeddings or transformer models. I would also test the model on more 
+    diverse examples to ensure it generalizes well to real-world text.

@@ -1,0 +1,14 @@
+<h2>Add Movie</h2>
+
+<form method="POST">
+  {% csrf_token %}
+
+  <input name="id" placeholder="ID"><br><br>
+  <input name="title" placeholder="Title"><br><br>
+  <input name="genre" placeholder="Genre (comma separated)"><br><br>
+  <input name="year" placeholder="Year"><br><br>
+  <input name="director" placeholder="Director"><br><br>
+  <input name="duration" placeholder="Duration"><br><br>
+
+  <button type="submit">Add Movie</button>
+</form>

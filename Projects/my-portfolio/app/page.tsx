@@ -8,22 +8,15 @@ export default function Portfolio() {
     <main className="bg-gradient-to-br from-black via-gray-900 to-black text-white min-h-screen font-sans overflow-x-hidden">
       <Navbar />
       <Hero />
-      <About />
-      <Skills />
       <Projects />
+      <Skills />
+      <About />
       <Contact />
     </main>
   );
 }
 
-function GlowBackground() {
-  return (
-    <div className="fixed inset-0 -z-10">
-      <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600 rounded-full blur-3xl opacity-30" />
-      <div className="absolute bottom-20 right-10 w-72 h-72 bg-indigo-600 rounded-full blur-3xl opacity-30" />
-    </div>
-  );
-}
+
 
 function Navbar() {
   return (
@@ -31,8 +24,8 @@ function Navbar() {
       <h1 className="font-bold text-lg tracking-wide">JunDEV</h1>
       <div className="space-x-6 text-sm">
         <a href="#about" className="hover:text-purple-400">About</a>
-        <a href="#skills" className="hover:text-purple-400">Skills</a>
         <a href="#projects" className="hover:text-purple-400">Projects</a>
+        <a href="#skills" className="hover:text-purple-400">Skills</a>
         <a href="#contact" className="hover:text-purple-400">Contact</a>
       </div>
     </nav>
@@ -99,54 +92,6 @@ function Hero() {
   );
 }
 
-function About() {
-  return (
-    <section id="about" className="px-6 py-20 max-w-5xl mx-auto">
-      <h2 className="text-4xl font-bold mb-6">About Me</h2>
-      <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl">
-        <p className="text-gray-300 leading-relaxed">
-          I am a junior software developer with experience in Java, Python,
-          Flutter, and web technologies. I enjoy building modern applications,
-          working in teams, and continuously learning new technologies,
-          especially in AI and machine learning.
-        </p>
-      </div>
-    </section>
-  );
-}
-
-function Skills() {
-  const skills = [
-    "Java",
-    "Python",
-    "JavaScript",
-    "Spring Boot",
-    "HTML",
-    "CSS",
-    "PostgreSQL",
-    "REST APIs",
-    "CI/CD",
-    "Git/GitHub",
-  ];
-
-  return (
-    <section id="skills" className="px-6 py-20">
-      <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-        {skills.map((skill, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            className="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl text-center"
-          >
-            {skill}
-          </motion.div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function Projects() {
   const projects = [
     {
@@ -162,6 +107,13 @@ function Projects() {
       img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
       github: "https://github.com/FurtiAdi/Tutorbridge-webapp",
       demo: "https://furtiadi.github.io/Tutorbridge-webapp/",
+    },
+    {
+      title: "Discussion Forum",
+      desc: "Threaded discussion forum with posts, nested replies, PHP templating, MySQL integration, and responsive UI.",
+      img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+      github: "https://github.com/FurtiAdi/DiscussionForum",
+      demo: "#",
     },
   ];
 
@@ -211,6 +163,107 @@ function Projects() {
     </section>
   );
 }
+
+function Skills() {
+  const skills = [
+    "Java",
+    "Python",
+    "JavaScript",
+    "Spring Boot",
+    "HTML",
+    "CSS",
+    "PostgreSQL",
+    "REST APIs",
+    "CI/CD",
+    "Git/GitHub",
+  ];
+
+  return (
+    <section id="skills" className="px-6 py-20">
+      <h2 className="text-4xl font-bold text-center mb-10">Skills</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        {skills.map((skill, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            className="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl text-center"
+          >
+            {skill}
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+
+
+function About() {
+  return (
+    <section id="about" className="py-28">
+      <div className="max-w-6xl pl-5 pr-24 md:pl-10 md:pr-40 grid md:grid-cols-2 gap-20 items-center">
+        
+        {/* LEFT SIDE */}
+        <div className="max-w-xl">
+          <p className="text-purple-400 text-m font-semibold uppercase tracking-[0.25em]">
+            About Me
+          </p>
+
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
+            Transforming{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">
+              Ideas
+            </span>
+          </h2>
+
+          <div className="space-y-2 text-gray-400 text-lg leading-8">
+            <p>
+              I'm a junior software developer with experience in Java, Python,
+              Flutter, HTML, CSS, JavaScript, and PHP.
+            </p>
+
+            <p>
+              Currently, I'm deepening my knowledge through an intensive Python
+              bootcamp focused on artificial intelligence and machine learning.
+            </p>
+
+            <p>
+              I enjoy building user-friendly applications, collaborating with teams,
+              and turning theoretical knowledge into real-world solutions.
+            </p>
+
+            <p>
+              I'm passionate about continuously improving my fullstack and AI skills
+              while working on meaningful and impactful projects.
+            </p>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE IMAGE */}
+        <div className="flex justify-center md:justify-end">
+          <div className="relative">
+            
+            {/* Background glow */}
+             <div className="absolute w-[260px] h-[380px] bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl opacity-30 translate-x-8 -translate-y-6"></div>
+
+
+            {/* Image */}
+            <div className="relative w-[260px] h-[380px] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+              <img
+                src="/furti.png"
+                alt="Fortuna"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
 
 function Contact() {
   return (

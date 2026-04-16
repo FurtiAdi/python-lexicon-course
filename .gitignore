@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+
+# Python
+venv/
+venv311/
+__pycache__/
+*.pyc
+.env
+*.env
+
+# Django
+db.sqlite3
+*.log
+media/
+
+# IDE
+.vscode/
+.lsp/
+.clj-kondo/
+
+# Node
+node_modules/
+
+# Build
+.next/

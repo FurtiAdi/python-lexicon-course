@@ -1,0 +1,11 @@
+input,output,decoding,tokens_out,constraint_passed,notes
+Machine learning models require large amounts of data to achieve high performance.,Machine learning models require large amounts of data to achieve high performance.,beam,12,True,
+Machine learning models require large amounts of data to achieve high performance.,Machine learning models require large amounts of data to achieve high performance.,sampling,12,True,
+Artificial intelligence is transforming industries by automating complex decision-making processes.,Artificial intelligence is transforming industries by automating complex decision-making processes.,beam,10,True,
+Artificial intelligence is transforming industries by automating complex decision-making processes.,Artificial intelligence is transforming industries by automating complex decision-making processes.,sampling,10,True,
+Natural language processing enables computers to understand and generate human language effectively.,Natural language processing enables computers to understand and generate human language effectively.,beam,12,True,
+Natural language processing enables computers to understand and generate human language effectively.,Natural language processing allows computers to understand and generate human language.,sampling,11,True,
+Deep learning techniques are widely used in image recognition and speech processing tasks.,Deep learning techniques are widely used in image recognition and speech processing tasks.,beam,13,True,
+Deep learning techniques are widely used in image recognition and speech processing tasks.,Deep learning techniques are widely used in image recognition and speech processing.,sampling,12,True,
+Cloud computing allows organizations to scale their resources efficiently and reduce infrastructure costs.,Cloud computing allows organizations to scale their resources efficiently and reduce infrastructure costs.,beam,13,True,
+Cloud computing allows organizations to scale their resources efficiently and reduce infrastructure costs.,Cloud computing allows organizations to scale their resources efficiently and reduce infrastructure costs.,sampling,13,True,

@@ -39,3 +39,25 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# --- Personal / unwanted files ---
+Claude.md
+Agents.md
+
+# --- Python (since you use AI/Python) ---
+venv/
+venv311/
+__pycache__/
+*.pyc
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+.lsp/
+.clj-kondo/
+
+# --- OS ---
+.DS_Store
+
+# --- Other projects (optional if same repo) ---
+Projects/.DS_Store
