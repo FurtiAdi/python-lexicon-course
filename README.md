@@ -44,7 +44,7 @@ Each folder contains a specific lecture and labs related to the course.
 ---
 
 ## Technologies
-- Python 3.6
+- Python 3.11
 - Django 1.11
 - Git & GitHub
 
