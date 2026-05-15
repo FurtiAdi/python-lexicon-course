@@ -1,0 +1,60 @@
+Weather Report - 2026-05-06 10:57
+----------------------------------------
+Stockholm:
+  Temperature: 9.9°C
+  Wind Speed: 5.4 km/h
+
+Gothenburg:
+  Temperature: 11.7°C
+  Wind Speed: 10.8 km/h
+
+Malmo:
+  Temperature: 12.9°C
+  Wind Speed: 15.5 km/h
+
+
+Weather Report - 2026-05-06 11:24
+----------------------------------------
+Stockholm:
+  Temperature: 10.5°C
+  Wind Speed: 5.0 km/h
+
+Gothenburg:
+  Temperature: 13.0°C
+  Wind Speed: 10.1 km/h
+
+Malmo:
+  Temperature: 13.0°C
+  Wind Speed: 16.2 km/h
+
+
+Weather Report - 2026-05-06 11:25
+----------------------------------------
+Stockholm:
+  Temperature: 10.5°C
+  Wind Speed: 5.0 km/h
+
+Gothenburg:
+  Temperature: 13.0°C
+  Wind Speed: 10.1 km/h
+
+Malmo:
+  Temperature: 13.0°C
+  Wind Speed: 16.2 km/h
+
+
+Weather Report - 2026-05-06 11:33
+----------------------------------------
+Stockholm:
+  Temperature: 10.7°C
+  Wind Speed: 4.3 km/h
+
+Gothenburg:
+  Temperature: 13.4°C
+  Wind Speed: 9.4 km/h
+
+Malmo:
+  Temperature: 13.3°C
+  Wind Speed: 16.6 km/h
+
+
